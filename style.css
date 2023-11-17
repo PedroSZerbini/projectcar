@@ -1,0 +1,495 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200;300&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+
+:root{
+    --cor0: #fff;
+    --cor1: #919191;
+    --cor2: #424242;
+    --cor3: #fffd00;
+    --cor4: #000000;
+    --cor5: #242424;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*TOPBAR*/
+.topbar .contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    background-color: var(--cor2);
+    
+}
+
+.contatos > a {
+    margin: 30px;
+    
+}
+
+ion-icon{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.contatos ion-icon:hover{
+    color: var(--cor3);
+    transform: scale(1.3);
+    transition: .4s;
+}
+
+/*HEADER*/
+
+
+nav{
+    display: flex;
+    width: 100%;
+    background-color: var(--cor5);
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: Orbitron, sans-serif;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a, i{
+    color: var(--cor0);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all .3s ease;
+}
+
+nav .menu-btn{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 690px){
+    nav .menu-btn{
+        display: block;
+    }
+    nav ul{
+        position: absolute;
+        top: 130px;
+        left: -100%;
+        background-color: #242424;
+        height: 80vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all .3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a{
+        font-size: 23px;
+    }
+} 
+
+nav ul li a:hover{
+    color: var(--cor3);
+    transition: .6s;
+    
+}
+
+nav ul li:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+i:hover{
+    color: #fffd00;
+}
+
+/*quem somos*/
+
+.whyus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text span{
+    font-weight: bolder;
+}
+
+.whyus .title{
+    margin-top: 120px;
+    width: 100vw;
+}
+
+.whyus .text{
+    width: 50vw;
+    padding-bottom: 40px;
+}
+
+.whyus .descricao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    flex-wrap: wrap;
+}
+
+
+
+.whyus .descricao p{
+    font-family: 'Unbounded', sans-serif;
+    letter-spacing: 6px;
+}
+
+.whyus .checks{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 20px;
+}
+
+@media (max-width: 690px){
+    .checks{
+        
+    }
+}
+
+.whyus .checks .check{
+    display: flex;
+    gap: 20px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.cards .card{
+    height: 250px;
+    padding: 50px 0 0 0;
+    width: 250px;
+    background-color: rgba(250, 248, 248, 0.975);
+    margin: 10px 10px;
+    overflow: hidden;
+    border-radius: 1px;
+    transition: .5s;
+    box-shadow: 15px 15px 30px 2px rgba(86, 86, 86, 0.707);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.cards .card h1{
+    font-size: 1.4rem;
+    color: #000000a3;
+    text-align: center;
+    padding: 30px 0 0 0;
+    font-weight: 100;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.titulo{
+    margin: 0 30px 0 30px;
+}
+
+.titulo hr{
+    margin: 30px 20px 30px 20px;
+}
+
+.titulo h2{
+    font-size: 2.3rem;
+    font-family: 'Unbounded', sans-serif;
+    margin: 60px 0 20px 0;
+    text-shadow: 10px 10px 10px 10px black;
+}
+
+
+.titulo p{
+    margin: 40px 0 0 0 ;
+    font-size: 1.2rem;
+    font-family: 'Unbounded', sans-serif;
+}
+
+
+
+/*MONTADORAS*/
+
+.montadoras{
+    background-color: #3d3d3d;
+}
+
+.montadoras .title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.title h2{
+    font-family: Orbitron;
+    font-size: 2rem;
+}
+
+.title span{
+    font-family: 'orbitron' ;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.title {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.title h2 {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #101010;
+  position: relative;
+  z-index: 2;
+}
+
+.title span {
+  position: absolute;
+  top: 1px;
+  color: #d2cbcba9;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-top: 70px;
+  letter-spacing: 7px;
+}
+
+@media (max-width:700px){
+    .title span{
+        font-size: 2rem;
+    }
+
+    .title h2{
+        font-size: 1.7rem;
+    }
+}
+
+.cars{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cars .car{
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: inset 14px 14px 98px 1px#3d3d3d;
+    margin: 30px ;
+    min-height: 220px;
+    min-width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/*Contatos*/
+
+.contacts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.contacts .box{
+    background-color: #efefef;
+    margin: 10px;
+    padding: 30px 50px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Unbounded', sans-serif;
+    box-shadow: 8px 9px 12px 2px rgba(0, 0, 0, 0.137);
+}
+
+.contacts .redes{
+    padding: 30px 20px 10px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.contacts i{
+    padding: 0px 10px;
+}
+
+.contacts h2{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.contacts .p{
+    font-size: .8rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.contato{
+    margin-top: 120px;
+}
+
+.contacts .email p{
+    font-size: .8rem;
+}
+
+/*footer*/
+
+.footer {
+    background-color: var(--cor2);
+    font-family: 'Unbounded', sans-serif;
+}
+
+.footer .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container .pilar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.three{
+    display: flex;
+
+}
+
+.three a{
+    color: white;
+    margin: 10px;
+}
+
+.one{
+    background-color: #1b1b1b;
+    text-align: center;
+    padding: 20px;
+}
+
+.two h2{
+    padding-bottom: 20px;
+}
+
+.two .links{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 10px 0 0 0;
+}
+
+.last{
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .9rem;
+}
+
+.last p{
+    font-size: .8rem;
+    color: white;
+    padding: 3px;
+}
+
+.last a{
+    text-decoration: none;
+}
+
+.one .icons{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+
+
+
+ 
+/*slide2*/
+
+.carrossel{
+
+    overflow: hidden;
+    height: 40vh;
+    width: 100%;
+    background-color: #3d3d3d;
+    display: flex;
+    align-items: center;
+}
+
+.containerr{
+    display: flex;
+    transition: transform 0.9s ease;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0);
+}
+
+.containerr img{
+    object-fit: contain;
+    height: 200px;
+    width: 200px;
+    margin-right: 80px;
+}
+
+
+

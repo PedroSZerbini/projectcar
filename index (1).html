@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--Ionic-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+     <!--Style-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href= "slide.css">
+     <!--Script-->
+    <script src="slide.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <title>RCA Imports</title>
+</head>
+<body>
+
+    <!--topbar-->
+  <nav class="topbar">
+    <div class="contatos">
+        <a href="#">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+          </a>
+        <a href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#">
+            <ion-icon name="call-outline"></ion-icon>
+        </a>
+    </div>
+  </nav>
+
+  <!--header-->
+
+  <nav>
+    <div class="logo">
+        <img src="img/logo1.png" alt="">
+    </div>
+
+    <div class="menu-btn">
+        <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+    </div>
+
+    <ul>
+        <li><a href="#home" class="active">Pagina Inicial</a></li>
+        <li><a href="#why-us">Quem Somos</a></li>
+        <li><a href="#montadoras">Montadoras</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+
+  </nav>
+  
+
+  
+
+    <main>
+        <!--SLIDE-->
+       <section class="slider" id="home">
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+                <div class="slide-box first">
+                    <img class="img-desktop" src="img/interiorchev.jpg" alt="slide 1">
+                    <img class="img-mobile" src="img/interiorchev.jpg" alt="slide 1">
+                </div>
+                <div class="slide-box two">
+                    <img class="img-desktop" src="img/car6g.jpg" alt="slide 2">
+                    <img class="img-mobile" src="img/car6p.jpg" alt="slide2">
+                </div>
+                <div class="slide-box three">
+                    <img class="img-desktop" src="img/bmwslide2.jpg" alt="slide 3">
+                    <img class="img-mobile" src="img/bmwslide2pq.jpg" alt="slide 3">
+                </div>
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+       </section>
+       <!--Quem Somos-->
+        <div class="container" id="why-us">
+
+            <div class="titulo">
+                <span>Quem Somos?</span>
+                <h2>Quem Somos?</h2>
+                <hr>
+                <div class="descricao">
+                    <p>
+                        Bem-vindo à RCA Imports, sua principal fonte de peças automotivas para uma variedade de marcas. Somos dedicados a fornecer a você as melhores peças de carro, com foco na qualidade, durabilidade e atendimento ao cliente.
+                    </p>
+                    <p>
+                        Fundada há vários anos, a RCA Imports percorreu um longo caminho     desde o seu início. Quando começamos, nossa paixão por carros nos impulsionou a iniciar nosso próprio negócio.
+                    </p>
+                    <p>
+                        Agora, atendemos clientes em todo o Brasil e estamos entusiasmados em fazer parte da indústria de peças automotivas. Esperamos que você goste de nossos produtos tanto quanto gostamos de oferecê-los a você.
+                    </p>
+                </div> 
+            </div>
+
+            <!--Cards-->
+            <div class="cards">
+                <div class="card">
+                    <div class="img">
+                        <img src="img/9055295_bxs_car_mechanic_icon.png" alt="">
+                    </div>
+                    <h1>Todos os tipos <br> de peça para <br> seu carro
+                    </h1>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="img/9055295_bxs_car_mechanic_icon.png" alt="">
+                    </div>
+                    <h1>Compras acima de  <br>R$499,00 ganham <br> desconto de 5%
+                    </h1>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="img/9055295_bxs_car_mechanic_icon.png" alt="">
+                    </div>
+                    <h1>Feche sua compra <br> em menos de <br> 10 minutos
+                    </h1>
+                </div>
+            </div>
+       </div>
+
+       <!--Montadoras-->
+
+       <section class="montadoras" id="montadoras">
+            <div class="title">
+                <span>Principais</span> 
+                <h2>Montadoras</h2>
+            </div>
+            <div class="cars">
+                <div class="car">
+                    <img src="imgmontadora/chevrolet200.png" alt="ICONE CHEVROLET">
+                </div>
+                <div class="car">
+                    <img src="imgmontadora/alfa-romeo150.png" alt="ICONE ALFA ROMEO">
+                </div>
+                <div class="car">
+                    <img src="imgmontadora/bmw-logo150.png" alt="ICONE BMW">
+                </div>
+                <div class="car">
+                    <img src="imgmontadora/citroen-logo.png" alt="ICONE CITROEN">
+                </div>
+                <div class="car">
+                    <img src="imgmontadora/hyundai-logo.png" alt="ICONE HYUNDAI">
+                </div>
+                <div class="car">
+                    <img src="imgmontadora/jeep-logo.png" alt="ICONE JEEP">
+                </div>
+                <div class="car">
+                    <img src="imgmontadora/audi-logo.png" alt="ICONE AUDI">
+                </div>
+                <div class="car">
+                    <img src="imgmontadora/honda-logo.png" alt="ICONE">
+                </div>
+                <div class="car">
+                    <img src="imgmontadora/ford-logo.png" alt="ICONE">
+                </div>
+                <div class="car">
+                    <img src="imgmontadora/dodge150.png" alt="ICONE">
+                </div>
+                <div class="car">
+                    <img src="imgmontadora/fiat.logo.png" alt="ICONE">
+                </div>
+                <div class="car">
+                    <img src="imgmontadora/nissan.logo.png" alt="ICONE">
+                </div>
+                <div class="car">
+                    <img src="" alt="ICONE">
+                </div>
+                <div class="car">
+                    <img src="" alt="ICONE">
+                </div>
+                <div class="car">
+                    <img src="" alt="ICONE">
+                </div>
+                <div class="car">
+                    <img src="" alt="ICONE">
+                </div>
+            </div>
+       </section>
+
+       <!--Contatos-->
+
+        <section class="contato" id="contato">
+            <div class="title">
+                <span>Contatos</span>
+                <h2>Contatos</h2>
+            </div>
+            <div class="contacts">
+                <div class="box">
+                    <h2>Telefones</h2>
+                    <p>(21) 99999-9999</p>
+                    <p>(21) 99999-9999</p>
+                    <p>(21) 99999-9999</p>
+                </div>
+                <div class="box">
+                    <h2>Redes Sociais</h2>
+                    <div class="redes">
+                        <a href=""><i class="fa-brands fa-whatsapp fa-2xl" style="color: #0f0f0f;"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram fa-2xl" style="color: #0f0f0f;"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook fa-2xl" style="color: #0f0f0f;"></i></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2>Email</h2>
+                    <p>importadora@rcaimports.com</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="pilar one">
+                    <img src="img/logo1.png" alt="">
+                    <div class="icons">
+                        <a href=""><i class="fa-brands fa-whatsapp fa-xl" style="color: #ffffff;"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+                <div class="pilar two">
+                    <h2>Links</h2>
+                    <div>
+                        <a class="links" href="#home" class="active">Pagina Inicial</a>
+                        <a class="links" href="#why-us">Quem Somos</a>
+                        <a class="links" href="#montadoras">Montadoras</a>
+                        <a class="links" href="#contato">Contato</a>
+                    </div>
+                </div>
+                <div class="pilar three">
+                    <h2>Reclamações</h2>
+                    <a class="links" href="#">importadora@rcaimports.com</a>
+                    <a href="#">(21) 99999-9999</a>
+                </div>
+            </div>
+            <div class="last">
+                <p>Todos os direitos reservados a RCA Imports</p>
+                <p>Criado por <span><a href="#">@PedroZerbini</a></span></p>
+            </div>
+        </footer>
+    </main>
+
+
+
+
+    <!--SCRIPTS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+
+    </script>
+    <script>
+        var header = document.getElementById('header');
+        var navigationHeader = document.getElementById('navigation_header');
+        var showSidebar = false;
+
+        function toggleSidebar()
+        {
+            showSidebar = !showSidebar;
+            if(showSidebar)
+            {
+                navigationHeader.style.marginLeft = '-2vw';
+                navigationHeader.style.animationName = 'showSidebar'
+            }
+            else
+            {
+                navigationHeader.style.marginLeft = '-100vw';
+                navigationHeader.style.animationName = '';
+            }
+        }
+
+        window.addEventListener('resize', function(event) {
+            if(window.innerWidth > 768 && showSidebar)
+            {
+                toggleSidebar();
+            }
+        });
+    </script>
+    <script src="header.js"></script>
+</body>
+</html>
